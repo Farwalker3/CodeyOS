@@ -1,10 +1,1027 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		
-	</body>
-</html>
+<head>
+ <title>Codey OS 0.1</title>
+ <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/OS_X_El_Capitan_logo.svg/2000px-OS_X_El_Capitan_logo.svg.png">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=50%, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- ICONS -->
+
+<body id="shelf">
+ <div id="menubar" style="">
+  <div style="position: absolute; left: 0%; bottom: 0%; outline: rgba(0, 0, 0, 0.5) solid; background-color: rgba(0, 0, 0, 0.5); width: 5.5vh; height: 5vh;">
+   <input type="image" id="MULTI" onclick="myMULTI()" src="http://identitydesigned.com/images/proud-creative/incite-symbol-01.gif" alt="HOME" style="position: absolute; bottom: 0.7vh; left: 1vh; width: 4vh; height: 4vh;">
+  </div>
+  <div style="position: absolute; right: 0%; bottom: 0%; outline: rgba(0, 0, 0, 0.5) solid; background-color: rgba(0, 0, 0, 0.5); width: 5.5vh; height: 5vh;">
+   <input type="image" id="SIDEMENU" onclick="mySIDEMENU()" src="https://cdn4.iconfinder.com/data/icons/simple-lines-2/32/Sidebar_Left_Interface_Menu_Window-64.png" alt="HOME" style="position: absolute; bottom: 0.7vh; left: 1vh; width: 4vh; height: 4vh;">
+  </div>
+  <div style="position: absolute; left: 20%; bottom: 0%; outline: rgba(0, 0, 0, 0.5) solid; background-color: rgba(0, 0, 0, 0.5); width: 50%; height: 5vh;">
+   <input type="image" id="HOME" onclick="myStart()" src="https://cdn3.iconfinder.com/data/icons/arrows-actions/126/slice36-256.png" alt="HOME" style="position: absolute; bottom: 0.7vh; left: 1vh; width: 4vh; height: 4vh;">
+   <input type="image" id="CHROME" onclick="myFunction44()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/browser-128.png" alt="CHROME" style="position: absolute; bottom: 0.7vh; left: 6vh; width: 4vh; height: 4vh;">
+   <input type="image" id="TEXT" onclick="myFunction13()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/document-128.png" alt="TEXT" style="position: absolute; bottom: 0.7vh; left: 11vh; width: 4vh; height: 4vh;">
+   <input type="image" id="ART" onclick="myFunctionART()" src="https://cdn0.iconfinder.com/data/icons/circle-icons/128/office_suite_pro_7.png" alt="ART" style="position: absolute; bottom: 0.7vh; left: 16vh; width: 4vh; height: 4vh;">
+   <input type="image" id="MUSIC" onclick="myFunction3()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/music-128.png" alt="MUSIC" style="position: absolute; bottom: 0.7vh; left: 21vh; width: 4vh; height: 4vh;">
+   <input type="image" id="GAME" onclick="myFunction4()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/gamecontroller-128.png" alt="GAME" style="position: absolute; bottom: 0.7vh; left: 26vh; width: 4vh; height: 4vh;">
+   <input type="image" id="CHAT" onclick="myFunction37()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-128.png" alt="CHAT" style="position: absolute; bottom: 0.7vh; left: 31vh; width: 4vh; height: 4vh;">
+   <input type="image" id="CALC" onclick="myFunction1397()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/calculator-128.png" alt="CALC" style="position: absolute; bottom: 0.7vh; left: 36vh; width: 4vh; height: 4vh;">
+   <input type="image" id="OTHER" onclick="myFunctiOTHER()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/magicwand-128.png" alt="OTHER" style="position: absolute; bottom: 0.7vh; left: 41vh; width: 4vh; height: 4vh;">
+   <input type="image" id="HOME" onclick="myStart()" src="https://cdn3.iconfinder.com/data/icons/arrows-actions/126/slice36-256.png" alt="HOME" style="position: absolute; bottom: 0.7vh; right: 1vh; width: 4vh; height: 4vh;">
+  </div>
+  <!-- Start -->
+  <div id="START" style="position:absolute; left:20%; bottom: 6vh; width:60%;height:50vh;background-color:rgba(0, 0, 0, 0.5);z-index:2;resize:both;overflow:auto;outline:rgba(0,0,0,1) solid;display:none;">
+   <center style="font-size:10px;background-color:grey;height:4%">CODEY OS</center>
+   <input type="image" id="CHROME" onclick="myFunction44()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/browser-128.png" alt=" " style="position: absolute; top: 5%; left: 1vh; width: 5vh; height: 5vh;">
+   <input type="image" id="TEXT" onclick="myFunction13()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/document-128.png" alt=" " style="position: absolute; top: 5%; left: 7vh; width: 5vh; height: 5vh;">
+   <input type="image" id="ART" onclick="myFunctionART()" src="https://cdn0.iconfinder.com/data/icons/circle-icons/128/office_suite_pro_7.png" alt=" " style="position: absolute; top: 5%; left: 13vh; width: 5vh; height: 5vh;">
+   <input type="image" id="MUSIC" onclick="myFunction3()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/music-128.png" alt=" " style="position: absolute; top: 5%; left: 19vh; width: 5vh; height: 5vh;">
+   <input type="image" id="GAME" onclick="myFunction4()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/gamecontroller-128.png" alt=" " style="position: absolute; top: 5%; left: 25vh; width: 5vh; height: 5vh;">
+   <input type="image" id="CHAT" onclick="myFunction37()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-128.png" alt=" " style="position: absolute; top: 5%; left: 31vh; width: 5vh; height: 5vh;">
+   <input type="image" id="CALC" onclick="myFunction1397()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/calculator-128.png" alt=" " style="position: absolute; top: 5%; left: 37vh; width: 5vh; height: 5vh;">
+   <input type="image" id="OTHER" onclick="myFunctiOTHER()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/magicwand-128.png" alt=" " style="position: absolute; top: 5%; left: 43vh; width: 5vh; height: 5vh;">
+   <button onclick="TXT1()" style="background-color:#FF0000;padding:5px;text-align:center;width:30%;height:20px;display: table-cell;position:absolute;bottom:0px;">WELCOME</button>
+   <script>
+    function TXT1() {
+     alert("WELCOME");
+    }
+   </script>
+   <button onclick="TXT2()" style="background-color:#00FF00;padding:5px;text-align:center;width:40%;height:20px;display: table-cell;position:absolute;bottom:0px;left:30%;">ABOUT THE OS</button>
+   <button onclick="TXT3()" style="background-color:#0000FF;padding:5px;text-align:center;width:30%;height:20px;display:table-cell;position:absolute;bottom:0px;left:70%;">OTHER</button>
+   <script>
+    function TXT3() {
+     alert("OTHER");
+    }
+   </script>
+  </div>
+  <script>
+   function myStart() {
+    var x = document.getElementById('START');
+    if (x.style.display === 'none') {
+     x.style.display = 'block';
+    } else {
+     x.style.display = 'none';
+    }
+   }
+  </script>
+  <!-- Functions -->
+  <div id="MULTI1" style="position:absolute; left:0%; bottom:4vh; width:20%;height:50vh;background-color:rgba(0, 0, 0, 0.5);z-index:2;resize:both;overflow:auto;outline:rgba(0,0,0,1) solid;display:none;">
+   <hr>
+   <button onclick="myFunctionLOG();TOOL();" style="position:absolute;left:20%;width:60%;border-width:2px;border-style: outset;border-color: buttonface;border-image: initial;background-color:buttonface;">Log Out</button>
+   <button onclick="TXT1()" style="background-color:#FF0000;padding:5px;text-align:center;width:100%;height:20px;display: table-cell;position:absolute;bottom:40px;">WELCOME</button>
+   <script>
+    function TXT1() {
+     alert("WELCOME");
+    }
+   </script>
+   <button onclick="TXT2()" style="background-color:#00FF00;padding:5px;text-align:center;width:100%;height:20px;display: table-cell;position:absolute;bottom:20px;left:0%;">ABOUT THE OS</button>
+   <button onclick="TXT3()" style="background-color:#0000FF;padding:5px;text-align:center;width:100%;height:20px;display:table-cell;position:absolute;bottom:0px;left:0%;">OTHER</button>
+   <script>
+    function TXT3() {
+     alert("OTHER");
+    }
+   </script>
+  </div>
+  <script>
+   function myMULTI() {
+    var x = document.getElementById('MULTI1');
+    if (x.style.display === 'none') {
+     x.style.display = 'block';
+    } else {
+     x.style.display = 'none';
+    }
+   }
+  </script>
+  <!-- Sidebar -->
+  <div id="SIDEBAR1" style="position:absolute; right:0%; bottom:6vh; width:20%;height:94vh;background-color:rgba(0, 0, 0, 0.5);z-index:2;resize:both;overflow:auto;outline:rgba(0,0,0,1) solid;display:none;">
+   <center style="color:white;">Widgets</center>
+   <hr>
+   <div style="width:100%;height:30%;overflow:scroll;">
+    <iframe style="display:inline-block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=74820" width="100%" height="125%" frameborder="0" scrolling="no"></iframe><a style="text-indent: -9999em;z-index: 1;height: 100%;display: block;position: relative;margin: -20px 0 0 0" href="https://www.willyweather.com/nh/rockingham-county/portsmouth.html" rel="nofollow">weather forecast</a></div>
+   <hr>
+   <a href="http://kwize.com/quote-widget/"><img style="width:100%;" src="http://kwize.com/pics/Quote-Widget-1-0.jpg" alt="Quote Widget"></a>
+   <hr>
+   <button onclick="TXT1()" style="background-color:#FF0000;padding:5px;text-align:center;width:100%;height:20px;display: table-cell;position:absolute;bottom:40px;">WELCOME</button>
+   <script>
+    function TXT1() {
+     alert("WELCOME");
+    }
+   </script>
+   <button onclick="TXT2()" style="background-color:#00FF00;padding:5px;text-align:center;width:100%;height:20px;display: table-cell;position:absolute;bottom:20px;left:0%;">ABOUT THE OS</button>
+   <script>
+    function TXT2() {
+     alert("About The OS: \nThis website was created by 13 year old, John Codey Barr, and it was made to do all your daily stuff on a website in the form of an Operating System or OS for short. You can contact me with new ideas, bugs, and other stuff at 21jbarr@shapleighschool.org if you are in my school, and if you aren't then contact me at my Farwalker3@icloud.com!\n\nWorks Cited:\nwww.wikipedia.org\nwww.wikimedia.com\nwww.onlinesheetmusic.com/\nwww.w3schools.com\nwww.successfulsinging.com\nwww.musicroom.com\nwww.avid.com\nwww.newgrounds.com\nwww.videezy.com\nwww.npr.org\nwww.jwpepper.com\nwww.freebirdnotes.com\nwww.iconfinder.com\nwww.htmlgames.com\nhttp://www.arcadespot.com");
+    }
+   </script>
+   <button onclick="TXT3()" style="background-color:#0000FF;padding:5px;text-align:center;width:100%;height:20px;display:table-cell;position:absolute;bottom:0px;left:0%;">OTHER</button>
+   <script>
+    function TXT3() {
+     alert("OTHER");
+    }
+   </script>
+  </div>
+  <script>
+   function mySIDEMENU() {
+    var x = document.getElementById('SIDEBAR1');
+    if (x.style.display === 'none') {
+     x.style.display = 'block';
+    } else {
+     x.style.display = 'none';
+    }
+   }
+  </script>
+  <script>
+   var myVar = setInterval(myTimer, 1000);
+
+   function myTimer() {
+    var d = new Date();
+    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+   }
+  </script>
+  <!-- Clock -->
+  <div id="clock2" style="position:absolute;Bottom:0vh;right:5.9vh;background-color: rgba(0,0,0,0.5);width:125px;height:5.25vh;"></div>
+  <p id="clock" style="position:absolute;bottom:-.75vh;right:80px;font-size:14px;color:white;font-family:Arial;">7:21:21 PM</p>
+  <img id="profile" src="http://img2.timeinc.net/people/i/2015/greatideas/blog/150928/cheeseburger-600x450.jpg" alt=" " style="position: absolute; bottom: 0.5vh; right: 6.5vh; width: 4.5vh; height: 4.5vh;">
+  <button onclick="TOOL()" style="position:absolute;Bottom:0vh;right:5.9vh;width:125px;height:5.25vh;"></button>
+  <div id="myTOOL" style="position:absolute; right:5vh; bottom:4vh; width:20vw; height:50vh;background-color:rgba(0,0,0,0.5);display:table;text-align:center;display:none;z-index:3;outline:rgba(0,0,0,1) solid;"><u style="color:white;">SETTINGS</u>
+   <hr>
+   <select id="themes" onchange="changeTheme()" style="width:50%">
+    <option selected="" disabled="">Choose Walpaper</option>
+    <optgroup label="PHOTOS">
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/20/20101020_Sheep_shepherd_at_Vistonida_lake_Glikoneri_Rhodope_Prefecture_Thrace_Greece.jpg">Nature: Sheep</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/b/bf/Linden%2C_paysage.jpg">Nature: Linden</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/8d/Freudenberg_sg_Switzerland.jpg">Nature: Switzerlan</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/6/60/Dry_Etosha_Pan.jpg">Nature: Etosha</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/9/91/Peyto_Lake-Banff_NP-Canada.jpg">Nature: Peyto Lake</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/6/69/K%C3%B6cherbaumwald-01.jpg">Nature: KÃ¶cherbaumwald</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/6/6b/Aerial_View_-_Landschaft_Markgr%C3%A4flerland1.jpg">Nature: Landschaft</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/ed/Paysage_karabagh_02.jpg">Nature: Paysage</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/b/bf/Paysage_jura.jpg">Nature: Jura</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/2d/%D0%9D%D1%96%D0%B6%D0%BD%D0%B8%D0%B9_%D1%80%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%BE.jpg">Nature: Foggy Land</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/81/Niinsaare_j%C3%A4rv.jpg">Nature: Niinsaare</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tessellated_Pavement_Sunrise_Landscape.jpg">Nature: Tesselated Sunrise</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/5/5c/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG">Nature: Perito Moreno Glacier</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/23/Bah%C3%ADa_Onelli_Parque_Nacional_Los_Glaciares_Patagonia_Argentina_Luca_Galuzzi_2005.JPG">Nature: Argentina Glacier</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/e5/G%C3%B6reme_Valley_in_Cappadocia_edit1.jpg">Nature: Valley In Cappadocia</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/0/0e/Salar_de_Atacama.jpg">Nature: Salar De Atacama</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/d/dd/Piles_of_Salt_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006_a.jpg">Nature: Piles Of Salt</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/2b/Dawn_at_swifts_creek_panorama.jpg">Nature: Dawn At Panorama</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/b/bc/Saddle_tor_to_Hey_tor_pano.jpg">Nature: Saddle Mountians</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/9/9f/99_-_Machu_Picchu_-_Juin_2009.edit3.jpg">Nature: Machu Picchu</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/80/Flatirons_Winter_Sunrise_edit_2.jpg">Nature: Flatirons Winter Sunrise</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/0/01/20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg">Nature: North Face Of Everest</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/3/35/Roraima3_%2879%29.JPG">Nature: Roraima</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/7/73/Bali_Khila_Rajgad_Maharashtra.jpg">Nature: Maharashtra</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/3/35/2011-08-02_15-07-48_Switzerland_Diavolezza_11vl.jpg">Nature: Switzerland Diavolezza</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/1/1d/On_the_way_to_Kalash_Valley_Chitral_Pakistan.jpg">Nature: Kalash Valley</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gentau_Pic_du_Midi_Ossau.jpg">Nature: Gentau Pic Du Midi Ossau</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/6/6e/Loch_Torridon%2C_Scotland.jpg">Nature: Loch Torridon Scotland</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/e6/Eilean_Donan_pano.jpg">Nature: Eilean Donan</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/f/f0/Willow_Flats_area_and_Teton_Range_in_Grand_Teton_National_Park.jpg">Nature: Grand Teton National Park</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/25/Red.svg">Solid Color: Red</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/d/d6/Solid_orange.svg">Solid Color: Orange</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/0/09/Solid_yellow.svg">Solid Color: Yellow</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/29/Solid_green.svg">Solid Color: Green</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/f/ff/Solid_blue.svg">Solid Color: Blue</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/24/Solid_purple.svg">Solid Color: Purple</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/7/70/Solid_white.svg">Solid Color: White</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/86/Solid_grey.svg">Solid Color: Grey</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/21/Solid_black.svg">Solid Color: Black</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/4/48/RAL-Color_1036.gif">RAL Color: Gold</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/8b/RAL-Color_2013.gif">RAL Color: Red</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/0/04/RAL-Color_3032.gif">RAL Color: Burgandy</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/b/b8/RAL-Color_3033.gif">RAL Color: Amaranth</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/e9/RAL-Color_4011.gif">RAL Color: Purple</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/f/fd/RAL-Color_5025.gif">RAL Color: Cyan</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/e8/RAL-Color_5026.gif">RAL Color: Blue</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/d/d0/RAL-Color_6035.gif">RAL Color: Green</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/6/62/RAL-Color_6036.gif">RAL Color: Teal</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/b/b4/RAL-Color_1035.gif">RAL Color: Tan</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/20/RAL-Color_9022.gif">RAL Color: Silver</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/ef/RAL-Color_9023.gif">RAL Color: Grey</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/0/07/Color_icon_pink.png">Tile Color: Pink</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/25/Color_icon_orange.png">Tile Color: Orange</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png">Tile Color: Yellow</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/87/Color_icon_green.png">Tile Color: Green</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/2e/CyanIcon.png">Tile Color: Cyan</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/9/9d/Color_icon_magenta.jpg">Tile Color: Magenta</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/1/13/Color_icon_purple.png">Tile Color: Purple</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/3/32/Color_icon_brown.png">Tile Color: Brown</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/2/23/Color_icon_gold.png">Tile Color: Gold</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/5/56/Color_icon_gray.png">Tile Color: Grey</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/8/81/Color_icon_black.png">Tile Color: Black</option>
+     <option value=""></option>
+    </optgroup>
+    <optgroup label="ANIMATED">
+     <option value="http://78.media.tumblr.com/63f930216ef455302643622480d18766/tumblr_ni0hraA3gv1r82eito1_r1_500.gif">Simple: Lava Lamp</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/d/d9/The_Belousov-Zhabotinsky_Reaction.gif">Simple - The Belousov Zhabotinsky Reaction</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/c/c3/3-orbifold-voronoi-animated.gif">Simple - 3 Orbifold Voronoi</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/1/1f/Wallpaper.FALA-S.gif">Simple: White</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/e/e3/Wallpaper.FALA_S-B.gif">Simple: Balck</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/5/5a/Brownianmotion_beads_in_water_spim_video.gif">Simple - Beads In Water</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/6/61/Nature-3.gif">Nature - Slideshow 1</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/5/59/Nature.gif">Nature - Slideshow 2</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/a/a7/Animation_candle_flame.gif">Light - Candle</option>
+     <option value="https://commons.wikimedia.org/wiki/File:Blender3D_LoopingParticleFire.gif">Light - Fire</option>
+     <option value="https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif">Other - Matrix</option>
+     <option value=""></option>
+    </optgroup>
+   </select>
+   <script type="text/javascript">
+    function changeTheme() {
+     var e = document.getElementById("themes");
+     var theme = e.options[e.selectedIndex].value;
+     console.log(theme);
+     document.getElementById("shelf").style.backgroundImage = "url(" + theme + ")";
+    }
+   </script>
+   <input type="file" name="pic" accept=".png, .jpg, .jpeg" id="pic" onchange="readURL(event)" style="display: inline-block;">
+   <br>
+   <script>
+    function readURL(event) {
+     var file = document.getElementById("pic").files[0];
+     var reader = new FileReader();
+     reader.onloadend = function() {
+      document.getElementById('shelf').style.backgroundImage = "url(" + reader.result + ")";
+     }
+     if (file) {
+      reader.readAsDataURL(file);
+     } else {}
+    }
+   </script>
+   <hr>
+   <script src="https://togetherjs.com/togetherjs-min.js"></script>
+   <button onclick="TogetherJS(this); return false;" style="border-width:2px;border-style: outset;border-color: buttonface;border-image: initial;background-color:buttonface;">Collaborate With Friends</button>
+   <hr>
+   <button onclick="TXT2()" style="background-color:#4CAF50;padding:5px;text-align:center;width:100%;display: table-cell;position:absolute;bottom:0px;">ABOUT THE OS</button>
+  </div>
+  <script>
+   function TOOL() {
+    var x = document.getElementById('myTOOL');
+    if (x.style.display === 'none') {
+     x.style.display = 'block';
+    } else {
+     x.style.display = 'none';
+    }
+   }
+  </script>
+ </div>
+ <!-- LOG IN SCREEN -->
+ <div id="myLOGIN" class="windowdrag" style="position:absolute;left:0%;top:0%;width:100%;height:100%;padding-top:0%;background-color:rgba(200,200,200,0.5);
+outline:rgba(0,0,0,1) solid;z-index:5;display:block;">
+  <div style="position:absolute;top:30%;width:100%;">
+   <center style="font-size:70px;font-family:Arial Black, Gadget, sans-serif;">LOGIN</center>
+  </div>
+  <input type="image" id="TEXT" onclick="myFunctionLOG()" src="https://cdn3.iconfinder.com/data/icons/social-media-2125/80/enter-128.png" alt=" " style="position:absolute;left:48.5%;top:51%;width:3%;height:5%;z-index:3;">
+  <textarea style="position:absolute;top:45%;left:40%;width:20%;height:2%;resize:none;background-color:transparent;text-align:center;border:none;border-top:3px double #000000;border-bottom:3px double #000000;" placeholder="PASSWORD"></textarea>
+ </div>
+ <script>
+  function myFunctionLOG() {
+   var x = document.getElementById('myLOGIN');
+   if (x.style.display === 'none') {
+    x.style.display = 'block';
+   } else {
+    x.style.display = 'none';
+   }
+  }
+ </script>
+ <!-- TEXT -->
+ <div id="myDIV" class="windowdrag" style="position:absolute;left:.5%;top:1%;width:99%;height:11%;padding-top:0%;background-color:rgba(200,200,200,0.5);
+outline:rgba(0,0,0,1) solid;overflow:scroll;display:none;">
+ </div>
+ <script>
+  function myFunction13() {
+   var x = document.getElementById('myDIV');
+   if (x.style.display === 'none') {
+    x.style.display = 'block';
+   } else {
+    x.style.display = 'none';
+   }
+  }
+ </script>
+ <!-- Office -->
+ <div id="ART11" class="justified" style="position: absolute; left: 0.5%; top: 15%; outline: rgba(0, 0, 0, 1) solid; background-color: rgba(200, 200, 200, 0.5); width: 50%; height: 50%; display: none;">
+  <div style="position:absolute;top:0%;left:0%;width:100%;height:100%;background-color:#ce3635;text-align:center;color:#fff;">
+   <center href="" class="typewrite" data-period="2000" data-type='[ "Office", "Write", "Draw", "Work" ]' style="line-height:350px;">
+    <span class="wrap"></span>
+   </center>
+  </div>
+  <select style="position:absolute;top:0%;left:0%;width:100%;height:5%;background-color:rgba(200,200,200,0.5);font-size:70%;" name="" id="drop_downoffice" onchange="showHideoffice();">
+   <option selected="" disabled="">Office</option>
+   <option value="val0office">Reset</option>
+   <option value="val1office">Paint</option>
+   <option value="val2office">Text</option>
+   <option value="val3office">Calculator</option>
+  </select>
+  <div id="Woffice" style="display: none;">
+<div style="position:absolute;top:5%;left:0%;with:100%;height:95%;background-color:white;">
+ <canvas id="draw" onmouseup="release()" onmousedown="lc=1" onmousemove="Draw(event)" 
+style="cursor:crosshair;top:0%;left:0%;width:100%;height:100%"></canvas>
+<input type="color" id="hex" style="position:absolute;top:1%;left:50px;width:45px;z-index:2;">
+<input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:1%;left:2.5px;z-index:2;">
+</div>
+<script>
+    var cnv = document.getElementById('draw');
+    var ctx = cnv.getContext('2d');
+    var lc=0;
+    var prX=-1;
+    var prY=-1;
+	var dot= ctx.createImageData(2,2);
+	for (i=0; i<dot.data.length; i+=4){
+		dot.data[i+0]=0;
+		dot.data[i+1]=160;
+		dot.data[i+2]=230;
+		dot.data[i+3]=255;
+        ctx.strokeStyle=color;
+	}
+function release(){
+	lc=0;
+	prX=-1;
+    ctx.strokeStyle=color;
+}
+function Draw(event){
+	if(lc==1){
+        var color = document.getElementById('hex').value;
+		var bb, x, y;
+		bb = cnv.getBoundingClientRect();
+		x = (event.clientX-bb.left) * (cnv.width/bb.width);
+		y = (event.clientY-bb.top) * (cnv.height/bb.height);
+        ctx.strokeStyle=color;
+		if (prX!=-1){
+			ctx.beginPath();
+			ctx.moveTo(prX,prY);
+			ctx.lineTo(x,y);
+			ctx.lineWidth=1;
+			ctx.closePath();
+			ctx.strokeStyle=color;
+			ctx.stroke();
+		}
+		prX=x
+		prY=y
+        ctx.strokeStyle=color;
+	}
+}
+function erase() {
+      var canvas=document.getElementById("draw");
+      var context=canvas.getContext("2d");
+      context.clearRect(0,0,canvas.width,canvas.height);
+     }
+</script>
+  </div>
+  <div id="Foffice" style="display: none;">
+   <meta charset="utf-8">
+   <meta name="robots" content="noindex, nofollow">
+   <script src="//cdn.ckeditor.com/4.7.3/full-all/ckeditor.js"></script>
+   <script src="https://cdn.ckeditor.com/4.7.3/standard-all/ckeditor.js"></script>
+   <div id="myDIV1" class="windowdrag" style="position:absolute;left:0%;top:5%;width:100%;height:95%;padding-top:0%;background-color:rgba(200,200,200,0.5);
+outline:rgba(0,0,0,1) solid;overflow:scroll;display:block;">
+    <textarea cols="1" id="editor1" name="editor1" rows="1">
+    </textarea>
+    <script>
+    CKEDITOR.replace( 'editor1', {
+			height: 400
+		} );
+     CKEDITOR.plugins.addExternal('simplebox', 'https://sdk.ckeditor.com/samples/assets/plugins/simplebox/', 'plugin.js');
+
+     CKEDITOR.replace('editor1', {
+
+      // Add the Simple Box plugin.
+      extraPlugins: 'simplebox',
+
+      // Besides editor's main stylesheet load also simplebox styles.
+      // In the usual case they can be added to the main stylesheet.
+      contentsCss: [
+       'http://sdk.ckeditor.com/samples/assets/plugins/simplebox/styles/contents.css',
+       'https://cdn.ckeditor.com/4.7.3/full-all/contents.css'
+      ],
+
+      // Set height to make more content visible.
+      height: 500
+     });
+     
+    </script>
+   </div>
+  </div>
+  <div id="Coffice" style="display: none;">
+   <div id="Calculator" style="position:absolute;top:5%;left:0%;background-color: rgba(200,200,200,0.5);width:100%;height:95%;">
+    <style>
+     #btn {
+      font-size: 10px;
+     }
+    </style>
+    <form name="calc" style="position:absolute;top:0%;left:0%;width:100%;height:100%;">
+     <table id="calc" border="0" align="center">
+      <tbody>
+       <tr>
+        <td colspan="5">
+         <input id="btn" name="display" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" type="text" placeholder="calculator" style="position:absolute;top:0%;left:0%;width:98.5%;height:25%;">
+        </td>
+        <td style="display:none">
+         <input name="M" type="number">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input id="btn" type="button" value="MC" onclick="calc.M.value=''" style="position:absolute;top:25%;left:0%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="0" onclick="calc.display.value+='0'" style="position:absolute;top:25%;left:20%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="1" onclick="calc.display.value+='1'" style="position:absolute;top:25%;left:40%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="2" onclick="calc.display.value+='2'" style="position:absolute;top:25%;left:60%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="+" onclick="calc.display.value+='+'" style="position:absolute;top:25%;left:80%;width:20%;height:15%;">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input id="btn" type="button" value="MS" onclick="calc.M.value=calc.display.value" style="position:absolute;top:40%;left:0%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="3" onclick="calc.display.value+='3'" style="position:absolute;top:40%;left:20%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="4" onclick="calc.display.value+='4'" style="position:absolute;top:40%;left:40%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="5" onclick="calc.display.value+='5'" style="position:absolute;top:40%;left:60%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="-" onclick="calc.display.value+='-'" style="position:absolute;top:40%;left:80%;width:20%;height:15%;">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input id="btn" type="button" value="MR" onclick="calc.display.value=calc.M.value" style="position:absolute;top:55%;left:0%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="6" onclick="calc.display.value+='6'" style="position:absolute;top:55%;left:20%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="7" onclick="calc.display.value+='7'" style="position:absolute;top:55%;left:40%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="8" onclick="calc.display.value+='8'" style="position:absolute;top:55%;left:60%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="x" onclick="calc.display.value+='*'" style="position:absolute;top:55%;left:80%;width:20%;height:15%;">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input id="btn" type="button" value="M+" onclick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))" style="position:absolute;top:70%;left:0%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="9" onclick="calc.display.value+='9'" style="position:absolute;top:70%;left:20%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="+/-" onclick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))" style="position:absolute;top:70%;left:40%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="=" onclick="calc.display.value=eval(calc.display.value)" style="position:absolute;top:70%;left:60%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="/" onclick="calc.display.value+='/'" style="position:absolute;top:70%;left:80%;width:20%;height:15%;">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input id="btn" type="button" value="1/x" onclick="calc.display.value=1/calc.display.value" style="position:absolute;top:85%;left:0%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="." onclick="calc.display.value+='.'" style="position:absolute;top:85%;left:20%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="x2" onclick="calc.display.value=Math.pow(calc.display.value,2)" style="position:absolute;top:85%;left:40%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="s.root" onclick="calc.display.value=Math.sqrt(calc.display.value)" style="position:absolute;top:85%;left:60%;width:20%;height:15%;">
+        </td>
+        <td>
+         <input id="btn" type="button" value="C" onclick="calc.display.value=''" style="position:absolute;top:85%;left:80%;width:20%;height:15%;">
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </form>
+   </div>
+  </div>
+  <script>
+   var xoffice = document.getElementById('Woffice');
+   var yoffice = document.getElementById('Foffice');
+   var zoffice = document.getElementById('Coffice');
+   var aoffice = document.getElementById('C2office');
+   xoffice.style.display = 'none';
+   yoffice.style.display = 'none';
+   zoffice.style.display = 'none';
+   aoffice.style.display = 'none';
+
+   function showHideoffice() {
+    if (document.getElementById('drop_downoffice').value == 'val0office') {
+     jsfunc0office();
+    } else if (document.getElementById('drop_downoffice').value == 'val1office') {
+     jsfunc1office();
+    } else if (document.getElementById('drop_downoffice').value == 'val2office') {
+     jsfunc2office();
+    } else if (document.getElementById('drop_downoffice').value == 'val3office') {
+     jsfunc3office();
+    } else if (document.getElementById('drop_downoffice').value == 'val4office') {
+     jsfunc4office();
+    }
+   }
+
+   function jsfunc0office() {
+    var xoffice = document.getElementById('Woffice');
+    var yoffice = document.getElementById('Foffice');
+    var zoffice = document.getElementById('Coffice');
+    var aoffice = document.getElementById('C2office');
+    xoffice.style.display = 'none';
+    yoffice.style.display = 'none';
+    zoffice.style.display = 'none';
+    aoffice.style.display = 'none';
+   }
+
+   function jsfunc1office() {
+    var xoffice = document.getElementById('Woffice');
+    var yoffice = document.getElementById('Foffice');
+    var zoffice = document.getElementById('Coffice');
+    var aoffice = document.getElementById('C2office');
+    xoffice.style.display = 'block';
+    yoffice.style.display = 'none';
+    zoffice.style.display = 'none';
+    aoffice.style.display = 'none';
+   }
+
+   function jsfunc2office() {
+    var xoffice = document.getElementById('Woffice');
+    var yoffice = document.getElementById('Foffice');
+    var zoffice = document.getElementById('Coffice');
+    var aoffice = document.getElementById('C2office');
+    xoffice.style.display = 'none';
+    yoffice.style.display = 'block';
+    zoffice.style.display = 'none';
+    aoffice.style.display = 'none';
+   }
+
+   function jsfunc3office() {
+    var xoffice = document.getElementById('Woffice');
+    var yoffice = document.getElementById('Foffice');
+    var zoffice = document.getElementById('Coffice');
+    var aoffice = document.getElementById('C2office');
+    xoffice.style.display = 'none';
+    yoffice.style.display = 'none';
+    zoffice.style.display = 'block';
+    aoffice.style.display = 'none';
+   }
+
+   function jsfunc4office() {
+    var xoffice = document.getElementById('Woffice');
+    var yoffice = document.getElementById('Foffice');
+    var zoffice = document.getElementById('Coffice');
+    var aoffice = document.getElementById('C2office');
+    xoffice.style.display = 'none';
+    yoffice.style.display = 'none';
+    zoffice.style.display = 'none';
+    aoffice.style.display = 'block';
+   }
+  </script>
+
+ </div>
+ <script>
+  function myFunctionART() {
+   var x = document.getElementById('ART11');
+   if (x.style.display === 'none') {
+    x.style.display = 'block';
+   } else {
+    x.style.display = 'none';
+   }
+  }
+ </script>
+ <!-- TEXT -->
+<div id="myDIV" class="windowdrag" style="position:absolute;left:.5%;top:1%;width:99%;height:11%;padding-top:0%;background-color:rgba(200,200,200,0.5);
+outline:rgba(0,0,0,0.5) solid;display:none;"><center style="font-size:2vh;font-family:Arial Black, Gadget, sans-serif;">Notepad</center>
+<input type="image" id="TEXT" onclick="myFunction13()" src="https://www.leadacity.net/webroot/images/global/icons/icon-nav-close.png" alt=" " style="position:absolute;right:2px;top:2px; width:0.9vw; height:2vh;z-index:3;">
+<textarea style="position:absolute;width:99.5%;height:70%;resize: none;background-color:transparent;text-align:center;">WELCOME TO CODEY'S OS (YOU CAN ADD TEXT HERE)</textarea></div><script>function myFunction13() {var x = document.getElementById('myDIV');if (x.style.display === 'none') {x.style.display = 'block';}else {x.style.display = 'none';}}</script>
+<!-- ART -->
+<div id="ART1" class="justified" style="position:absolute;left:.5%; top:15%;outline:rgba(0,0,0,0.5) solid;background-color: rgba(200,200,200,0.5);width:50%;height:50%;cursor:crosshair;display:none;">
+<input type="color" id="hex" style="position:absolute;top:1%;left:50px;width:45px">
+<input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:1%;left:2.5px;">
+<canvas id="draw"></canvas><script>var canvas = document.getElementById('draw');
+var ctx = canvas.getContext('2d');resize(); 
+function resize() {ctx.canvas.width = window.innerWidth / 2;ctx.canvas.height = window.innerHeight / 2;}window.addEventListener('resize', resize);document.addEventListener('mousemove', draw);document.addEventListener('mousedown', setPosition);document.addEventListener('mouseenter', setPosition);var pos = {x: 0, y: 0};
+function setPosition(e) {pos.x = e.clientX - 5;pos.y = e.clientY - 90;}function draw(e) {if (e.buttons !== 1) return;var color = document.getElementById('hex').value;ctx.beginPath();ctx.lineWidth = 5;ctx.lineCap = 'round';ctx.strokeStyle = color;ctx.moveTo(pos.x,pos.y);setPosition(e);ctx.lineTo(pos.x, pos.y);ctx.stroke();}
+function erase() {var m = confirm("Want to clear");if (m) {ctx.clearRect(0, 0, canvas.width, canvas.height);}}</script></div><script>
+function myFunctionART() {var x = document.getElementById('ART1');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script> 
+<!-- MUSIC -->
+<style>div.justified id="music"{display: flex;justify-content: center;}</style>
+<div id="music" style="position:absolute;top:15%;left:52%;outline:rgba(0,0,0,0.5) solid;background-color: rgba(200,200,200,0.5);width:28.5%;height:25%;display:none;">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div style="background-color:rgba(200,200,200,0.5);text-align:center;outline:rgba(0,0,0,0.5) solid;width:100%;">
+<button value="val1MUS1C" id="valid2" onclick="jsfuncMUS1C()" style="background-color: rgba(200,200,200,0.5);">MUSIC</button>
+<button value="val2VID2O" id="valid2" onclick="jsfuncVID2O()" style="background-color: rgba(200,200,200,0.5);">VIDEO</button>
+<button value="valIMAG3" id="valid2" onclick="jsfuncIMAG3()" style="background-color: rgba(200,200,200,0.5);">IMAGE</button>
+</div><div id="MUS1C" style="display: none;">
+<select id="selection" style="width:100%;"><option selected="" disabled="">Choose Music</option><optgroup label="RADIO">
+<option value="http://54.160.200.18/townsquare-wbznfmaac-ibc3?session-id=4cb10f8d1959b0017681bdb034f8fd36-71666b6b66643839693969616267386d%26">Z107.1</option>
+<option value="http://wheb-fm.akacast.akamaistream.net/7/700/19956/v1/auth.akacast.akamaistream.net/wheb-fm">100.3 WHEB</option>
+<option value="http://wxks-fm.akacast.akamaistream.net/7/844/19917/v1/auth.akacast.akamaistream.net/wxks-fm">KISS 108</option>
+<option value="http://wqso-fm.akacast.akamaistream.net/7/540/31700/v1/auth.akacast.akamaistream.net/wqso-fm">NEWS RADIO 96.7</option>
+<option value="http://hitnation.akacast.akamaistream.net/7/299/61095/v1/auth.akacast.akamaistream.net/hitnation">Hit Nation</option>
+<option value="http://americantop40.akacast.akamaistream.net/7/785/58084/v1/auth.akacast.akamaistream.net/americantop40">American Top 40</option>
+<option value=""></option></optgroup><optgroup label="DEMO + FULL SONGS"><option value="https://upload.wikimedia.org/wikipedia/en/4/49/The_Sound_of_Silence.ogg">Simon and Garfunkel - The Sound of Silence</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/c/c8/Journey_-_Any_Way_You_Want_It.ogg">Journey - Any Way You Want It</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/0/00/Journey_-_Don%27t_Stop_Believin%27.ogg">Journey - Dont Stop Believin</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/33/Starship_-_We_Built_This_City.ogg">Starship - We Built This City</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/b/bc/Wewillrockyou.ogg">Queen - We will rock you</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/3b/Lynyrd_Skynyrd_Sweet_Home_Alabama.ogg">Lynyrd Skynyrd - Sweet Home Alabama</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/df/Daft_Punk_-_Around_The_World_%28LP_Version%29.ogg">Daft Punk - Around The World</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/3d/Sample_of_Daft_Punk%27s_Da_Funk.ogg">Daft Punk - Da Funk</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/89/Daft_Punk_-_Get_Lucky.ogg">Daft Punk - Get Lucky</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/e2/Daft_Punk_-_Harder_Better_Faster_Stronger_%28Album_Version%29.ogg">Daft Punk - Harder Better Faster Stronger</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/69/Daft_Punk_-_One_More_Time_%28Radio_Edit%29.ogg">Daft Punk - One More Time</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/9/9a/Strings_of_Life.ogg">Rhythim is Rhythim - Strings of Life</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/3e/Scott_Brown_-_Elysium.ogg">Scott Brown - Elysium</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/65/Eagles_-_Hotel_California.ogg">Eagles - Hotel California</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/a/a9/Owl_City_-_Fireflies.ogg">Owl City - Fireflies</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/43/Viva_la_Vida.ogg">Coldplay - Viva la Vida</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/2/26/Europe_-_The_Final_Countdown.ogg">Europe - The Final Countdown</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/de/Surfin%27_USA.ogg">The Beach Boys - Surfin' USA</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/0/06/The_Rolling_Stones_-_Satisfaction.ogg">The Rolling Stones - Satisfaction</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/4c/Beatles_nowhere_man.ogg">Beatles - nowhere man</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/60/Can%27t_Stop_the_Feeling.ogg">Justin Timberlake - Can't Stop the Feeling</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/9/94/Michael_Jackson_-_Beat_It.ogg">Michael Jackson - Beat It</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/a/ab/Bruno_Mars_-_Just_the_Way_You_Are.ogg">Bruno Mars - Just the Way You Are</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/a/ae/Gotye_-_Somebody_That_I_Used_to_Know.ogg">Gotye - Somebody That I Used to Know</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/f/f4/Adele_-_Hello_Clip.ogg">Adele - Hello</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/82/Someone_Like_You.ogg">Adele - Someone Like You</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/86/Payphone.ogg">Maroon 5 - Payphone</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/a/a3/Train_Hey_Soul_Sister_Sample.ogg">Train - Hey Soul Sister</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/e8/Imagine_Dragons_-_Radioactive.ogg">Imagine Dragons - Radioactive</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/d6/David_Guetta_-_Titanium.ogg">David Guetta - Titanium</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/84/Macklemore_-_Can%27t_Hold_Us.ogg">Macklemore - Can't Hold Us</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/84/Don%27t_Worry%2C_Be_Happy.ogg">Bobby McFerrin - Don't Worry Be Happy</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/49/Flashdance.ogg">Irene Cara - Flashdance</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/a/ab/Let_It_Be_%28Beatles_song_-_sample%29.ogg">Beatles - Let It Be</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/1/1c/Wearethechampions.ogg">Queen - We are the champions</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/0/05/Michael_Jackson_-_Man_in_the_Mirror.ogg">Michael Jackson - Man in the Mirror</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/5/5d/Avicii_-_Wake_Me_Up.ogg">Avicii - Wake Me Up</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/0/08/OneRepublic_-_Counting_Stars.ogg">OneRepublic - Counting Stars</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/2/2c/Coldplay_-_Clocks.ogg">Coldplay - Clocks</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/67/Michael_Jackson_-_Bad.ogg">Michael Jackson - Bad</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/1/10/Michael_Jackson_Thriller.ogg">Michael Jackson - Thriller</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/d9/Owl_City_and_Carly_Rae_Jepsen_-_Good_Time.ogg">Owl City and Carly Rae Jepsen - Good Time</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/b/b4/Justin_Timberlake_-_Mirrors.ogg">Justin Timberlake - Mirrors</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/e1/03_Feel_This_Moment_%28feat_Christina_Aguilera%29.ogg">Pitbull and Christina Aguilera - Feel This Moment</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/2/21/Count_on_me.ogg">Bruno Mars - Count On Me</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/c/c6/Bruno_Mars_-_Marry_You.ogg">Bruno Mars - Marry You</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/5/5d/Bruno_Mars_-_The_Lazy_Song.ogg">Bruno Mars - The Lazy Song</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/45/Locked_Out_of_Heaven_%28Bruno_Mars_song_-_sample%29.ogg">Bruno Mars - Locked Out of Heaven</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/db/Sugar_Maroon.ogg">Maroon 5 - Sugar</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/36/Feel_Again_%28OneRepublic_song_-_sample%29.ogg">OneRepublic - Feel Again</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/e5/OneRepublic_-_Secrets.ogg">OneRepublic - Secrets</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/7/7b/OneRepublic_-_All_the_Right_Moves.ogg">OneRepublic - All the Right Moves</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/c/c5/OneRepublic_-_Stop_and_Stare.ogg">OneRepublic - Stop and Stare</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/89/OneRepublic_-_Apologize.ogg">OneRepublic - Apologize</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/a/af/Train_Calling_All_Angels_Sample.ogg">Train - Calling All Angels</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/c/cd/Train_Drops_of_Jupiter_Sample.ogg">Train - Drops of Jupiter</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/d2/Coldplay_-_A_Sky_Full_of_Stars_sample.ogg">Coldplay - A Sky Full of Stars</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/f/f1/WAKA_WAKA%28This_Time_for_Africa%29_%28Shakira_song_-_sample%29.ogg">Shakira - WAKA WAKA "This Time for Africa"</option>
+<option value="http://illuminaija.com/wp-content/uploads/2016/08/knaan_x_banky_w_x_mi_-_waving_flag_illuminaija.com.mp3?_=2">K'naan - Waving Flag</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/1/10/Stay_With_Me.ogg">Sam Smith - Stay With Me</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/62/When_Doves_Cry_sample.ogg">Prince - When Doves Cry</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/4b/Gloria_Estefan_%26_Miami_Sound_Machine_-_Conga.ogg">Gloria Estefan + Miami Sound Machine - Conga</option>
+<option value="http://images.amplified.com/FLVStream/Catalog/eb20e7d5-68c6-48eb-8aed-9072d54246db/Product/be4db5da-7340-47a0-bc9a-416343102098/886443040045_1_1_CLIP_0002_102.mp3">Matt Pond - Snow Day</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/8f/Love_Story.ogg">Taylor Swift - Love Story</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/e4/Taylor_swift_-_you_belong_with_me_%28clip%29.ogg">Taylor Swift - You Belong With Me</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/5/50/Macarena_%28Bayside_Boys_Mix%29_sample.ogg">Bayside Boys - Macarena</option>
+<option value="http://rovimusic.rovicorp.com/playback.mp3?c=EFjby0YYCLibKvDTQpBUoz6KsMttLlyBmmVTZ6_CLs0=&amp;f=I">Twenty One Pilots - Heathens</option>
+<option value="http://rovimusic.rovicorp.com/playback.mp3?c=6zPNzPkvyyfWGptNgPKmWASijaXJlYnq0St31qpAJWo=&amp;f=I">John Cougar Mellencamp - Small Town</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/45/ACDC_-_Back_In_Black-sample.ogg">ACDC - Back In Black</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/f/fe/Aerosmith_-_Dream_On.ogg">Aerosmith - Dream On</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/d1/Aerosmith_-_Sweet_Emotion.ogg">Aerosmith - Sweet Emotion</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/1/14/Aerosmith_-_Don%27t_Wanna_Miss_a_Thing.ogg">Aerosmith - Don't Wanna Miss a Thing</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/d2/Walk_This_Way_%28Aerosmith%29_sample.ogg">Aerosmith - Walk This Way</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/ef/Landslide_by_Fleetwood_Mac.ogg">Fleetwood Mac - Landslide</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/3e/Fmacstop.ogg">Fleetwood Mac - Don't Stop</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/4f/Intheairtonight.ogg">Phil Collins - In The Air Tonight</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/9/93/On_the_Road_Again.ogg">Willie Nelson - On The Road Again</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/d/de/Roy_Orbison_-_Oh%2C_Pretty_Woman.ogg">Roy Orbison - Oh Pretty Woman</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/2/28/PaparazziLadyGaga.ogg">LadyGaga - Paparazzi</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/4f/Lady_Gaga_-_Million_Reasons.ogg">Lady Gaga - Million Reasons</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/0/07/Straight_From_The_Heart.ogg">Bryan Adams - Straight From The Heart</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/e/e0/Believe_-_Cher.ogg">Cher - Believe</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/35/Usher_Yeah.ogg">Usher - Yeah</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/48/In_the_End.ogg">Linkin Park - In The End</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/7/78/Sean_kingston_-_fire_burning_%28clip%29.ogg">Sean Kingston - Fire Burning</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/6f/Ke%24ha_-_Blow.ogg">Kesha - Blow</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/6/6b/Chic_-_Good_Times.ogg">Chic - Good Times</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/8/83/Despacito_by_Luis_Fonsi_sample.wav">Luis Fonsi - Despacito</option>
+<option value=""></option></optgroup><optgroup label="INSTRUMENTAL / SING ALONG"><option value="https://upload.wikimedia.org/wikipedia/en/1/15/David_Whittaker_-_Lazy_Jones.ogg">David Whittaker - Lazy Jones</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/8/82/Chiptune2.ogg">Oona RÃ¤isÃ¤nen - Chiptune2</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/e/e8/Drozerix_-_Computer_Adventures.wav">Drozerix - Computer Adventures</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/d/df/The_Adventure_Lights.ogg">Skip Cloud - The Adventure Lights</option>
+<option value="https://public-assets-01.everywhere.avid.com/H04o4D9wSwqxk0ubwMsBQZek0F0V2EUAq-gsCCNkJDbVey0oet5PN6iXxUJlVz-C">Coldplay - Adventure of a Lifetime</option>
+<option value="https://public-assets-01.everywhere.avid.com/9BFBmZsNSQ2mMOCRn6BV4SbDjUdvjUHphLE6Tlo87jHJ9y72M_tAVajItOkwRQu0">Coldplay - Hymn For The Weekend</option>
+<option value="https://public-assets-01.everywhere.avid.com/bsw1BhHPS1OuV210Vfc-UuioosoQ1EYKsc5FhzDZ1k_dI7A3jNFMnq2oOQM0S-ry">Coldplay - Paradise</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/3/3f/Darude_-_Sandstorm.ogg">Darude - Sandstorm</option>
+<option value="http://c301969.r69.cf1.rackcdn.com/366082.mp3">Guns N' Roses - Paradise City</option>
+<option value="https://api.soundcloud.com/tracks/113479203/stream?client_id=aae0cd3ce269784234bb78aa6d485394">Soundcloud - Remix</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bitpop.wav">Laurel Wreath of Victors - Bitpop</option>
+<option value="https://public-assets-01.everywhere.avid.com/tyhPnBJERaOBN_94Kv2NY-SJqY1rZkYqvJMZjwoE8k5dpRLcOzZPJY6XhSBk78i1">Journey - Dont Stop Believin (Sing Along)</option>
+<option value="https://upload.wikimedia.org/wikipedia/en/4/42/Sweet_Child_O%27_Mine.ogg">Guns N' Roses - Sweet Child O Mine</option>
+<option value="http://www.contemplator.com/ogg/rebel.ogg">Bittersweet and Briers - Rebel</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/8/80/Arpeggio.ogg">Oona - Arpeggio</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/1/10/MacLeod%2C_Kevin_-_Funkorama.ogg">MacLeod C Kevin - Funkorama</option>
+<option value="https://public-assets-01.everywhere.avid.com/pBGrikLhQu6IRauvHj02YTz2sYN-aEHFshzuh90RC7awg0-Q_C5MZbvPSVyRAFXr">Disturbed - The Sound of Silence</option>
+<option value="https://public-assets-01.everywhere.avid.com/ieB2JSVyRoCewxgiaJpymyAlGIUhwU16iWJAyNn8Viyq58ZiGlFBmbBRk2S0m6Id">Journey - Any Way You Want It</option>
+<option value="https://public-assets-01.everywhere.avid.com/-DuDlioNRg63TUSRD6WRzryN5V2MyUTemQC6vvWm6wBqImPgOyJM75eclHbkmfGr">Phillip Keveren - We Will Rock You</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/b/bd/Shchedryk_%28Carol_of_the_Bells%29_-_Instrumental.ogg">Mykola Leontovych - Carol of the Bells</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/a/ae/Auld_Lang_Syne_New_Year%27s_Eve.ogg">Eyharburg - Auld Lang</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/f/f2/Silent_Night.ogg">Kevin MacLeod - Silent Night</option>
+<option value="https://public-assets-01.everywhere.avid.com/q2WQq89kS1GRc_6QMkHNBkKd4OxXyU5Xr9b2EIX70W9-lrJaZpFPIJnlcapwEHgD">Nirvana - Smells Like Teen Spririt</option>
+<option value="https://public-assets-01.everywhere.avid.com/iLITMzUNSsqOO8h1ouN1frkc13M00Un8kRikw1X6ynD2cIUpyXFPoZOfJ58RKCqB">Glee Cast - Hey Soul Sister</option>
+<option value="https://public-assets-01.everywhere.avid.com/gy4VtIZOSCSV3KMSjy4aIpnADL0vJk4_tEkOP8CgSJ7ds7K3EX1B645Cbem1XOQi">Chainsmokers + Coldplay - Something Just Like This</option>
+<option value="https://public-assets-01.everywhere.avid.com/lW1dRe9eRJiVImnDz5HGWrBOq7CQ-01SkI6WWz9PERkQBsVspyVG2oV4-revBLhZ">Ed Sheeran - Shape of You</option>
+<option value="https://public-assets-01.everywhere.avid.com/3u8OqNOsTYaoALSLHZmXPVKVf5DrXE46nebn0RJL-LMBcjf5ywNF3a5T_34nkN6f">Southern Amaerican Folksong - House of The Rising Sun</option>
+<option value="https://public-assets-01.everywhere.avid.com/aTu1gevhTgaeCappb37HY9DsWSAUS00qvzVBkZ9b-fjtVleceC1CUb97doPuPLOK">Avicii - Waiting For Love</option>
+<option value="https://public-assets-01.everywhere.avid.com/JoTs5-1DTfyPUgaaKEI4jh_9xaBLy0jTvuszk_60RoU6AB-zqn1GbYwq6gma7wr3">Avicii - The Nights</option>
+<option value="https://public-assets-01.everywhere.avid.com/lsr_hL3bTY-2GYhukL7rHzfhqdtW40S8nhMXTUJKEMcwseuPh1VAaKrsatYcTweZ">Avicii + Robbie Williams - The Days</option>
+<option value="https://public-assets-01.everywhere.avid.com/-7rix8IBQtSpXgRz3bTNUHxLppyYMESqt11dK49Bn5bdRXsz-AZI7odzMT8yNjUx">Avicii - Wake Me Up</option>
+<option value="https://public-assets-01.everywhere.avid.com/WUHgkfqUT-KUWgC3RJDXEWDCFt0FR0QIrZrmkUfqART3-aDT759IMZRAH3IKR5iD">Avicii + Nicky Romero - I Could Be The One</option>
+<option value="http://audio.ngfiles.com/670000/670312_Virtual-Riot---Energy-Drin.mp3">Virtual Riot - Energy Drink (Piano Cover)</option>
+<option value="http://audio.ngfiles.com/731000/731998_Inmerse.mp3">Twenty One Pilots - Stressed Out (Tomsize Remix)</option>
+<option value="http://audio.ngfiles.com/613000/613929_Dance-Of-The-Violins.mp3">F-777 - Dance Of The Violins</option>
+<option value="http://audio.ngfiles.com/672000/672483_The-Seven-Seas-Cover-F-777.mp3">Miyolophone - The Seven Seas (Cover) [F-777]</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/b/bb/Musopen_-_In_the_Hall_Of_The_Mountain_King.ogg">Musopen - In The Hall Of The Mountain King</option>
+<option value="https://public-assets-01.everywhere.avid.com/5Ppad-d6To-w_r58UnMdjoWAczwwn0MMr3fUv1rqhAAMlRAAWS5KlYPHIumeuiGM">Linkin Park - In The End</option>
+<option value="https://public-assets-01.everywhere.avid.com/MGlWOnKzQdO_P0p8trH1wDS0qmd5SEnatpoypjpi9REX-w2MRdhO4pgwupc7JbSn">Luis Fonsi - Despacito</option>
+<option value=""></option></optgroup></select>
+<input type="file" name="pic" accept="audio/*" id="input1" style="width:100%;display:inline-block;">
+<audio id="player" controls="" loop="controls" style="width:100%;">
+<source id="mp3_src" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Nokia_tune.ogg" type="audio/ogg">Your browser does not support the audio element.
+</audio>
+<script type="text/javascript">$(document).ready(function() {
+$('#selection').on('change', function() {change($(this).val());});});
+function change(sourceUrl) {var audio = document.getElementById("player");var source = document.getElementById("mp3_src");audio.pause();
+if (sourceUrl) {source.src = sourceUrl;audio.load();audio.play();}};</script><script>input1.onchange = function(e){
+var audio = document.getElementById("player");var sound = document.getElementById('mp3_src');
+sound.src = URL.createObjectURL(this.files[0]);audio.load();sound.onend = function(e) {URL.revokeObjectURL(this.src);}}
+</script></div><div id="VID2O" style="display: none;"><select id="selection1" style="width:100%;">
+<option selected="" disabled="">Choose Video</option><optgroup label="Long">
+<option value="http://reelsplay-01.herokuapp.com/api/play?url=pHl_EXK_9n0&amp;format=22">Blue Man Group</option>
+<option value="https://ondemand.npr.org/npr-mp4/npr/ascvid/2016/09/20160926_ascvid_bluemangrouptdc-n-600000.mp4">Blue Man Group 2</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/446/original/teck_vlog--c100_in_c-log_on_calm_the_storm.mp4">Beach Music</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/469/original/kovitomi-midnight-halfpipe-session-hd-stock-video.mp4">Bike Tricks</option>
+<option value="https://static.videezy.com/system/resources/previews/000/004/292/original/16_20Dragon_20Coaster_20Full.mp4">Roller Coaster</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/465/original/layback-hd-stock-video.mp4">Fun</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/472/original/justin_kauffman--justin_wagers_precision.mp4">Tight-Rope Tricks</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/478/original/helsinki-in-motion-hd-stock-video.mp4">Helsinki In Motion</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/454/original/out-of-the-box-hd-stock-video.mp4">Snowboarding Journey</option>
+<option value="https://static.videezy.com/system/resources/previews/000/002/471/original/kinetic-rain-hd-stock-video.mp4">Kinetic Rain</option>
+<option value=""></option></optgroup></select>
+<script type="text/javascript">$(document).ready(function() {
+$('#selection1').on('change', function() {change1($(this).val());});});
+function change1(sourceUrl) {var video = document.getElementById("myvideo");
+var source1 = document.getElementById("vid_src");video.pause();
+if (sourceUrl) {source1.src = sourceUrl;video.load();video.play();}};
+</script><video id="myvideo" controls="" style="height:65%;width:40%;">
+<source id="vid_src" src="http://reelsplay-01.herokuapp.com/api/play?url=pHl_EXK_9n0&amp;format=22" type="video/mp4">
+</video></div><div id="IMAG3" style="display: none;">not supported yet</div><script>
+var x1 = document.getElementById('MUS1C');var y1 = document.getElementById('VID2O');var z1 = document.getElementById('IMAG3');
+x1.style.display = 'none';y1.style.display = 'none';z1.style.display = 'none';
+function jsfuncMUS1C(){var x1 = document.getElementById('MUS1C');var y1 = document.getElementById('VID2O');var z1 = document.getElementById('IMAG3');
+x1.style.display = 'block';y1.style.display = 'none';z1.style.display = 'none';}
+function jsfuncVID2O(){var x1 = document.getElementById('MUS1C');var y1 = document.getElementById('VID2O');var z1 = document.getElementById('IMAG3');
+x1.style.display = 'none';y1.style.display = 'block';z1.style.display = 'none';}
+function jsfuncIMAG3(){var x1 = document.getElementById('MUS1C');var y1 = document.getElementById('VID2O');var z1 = document.getElementById('IMAG3');
+x1.style.display = 'none';y1.style.display = 'none';z1.style.display = 'block';}</script><script>
+function myFunction378() {var x = document.getElementById('myvideo');
+if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script></div><script>
+function myFunction3() {var x = document.getElementById('music');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script>
+<!-- GAME -->
+<style>
+    .justified {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #myDIV5 {
+        position: absolute;
+        top: 68%;
+        left: 0.5%;
+        outline: rgba(0, 0, 0, 0.5) solid;
+        background-color: rgba(200, 200, 200, 0.5);
+        width: 25.5%;
+        height: 25%;
+        display: none;
+    }
+
+    #myDIV5header {
+        cursor: move;
+        background-color: rgba(100, 100, 100, 0.8);
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 20%;
+        font-weight: bold;
+        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 100%;
+        outline: 0;
+    }
+</style>
+
+<div id="myDIV5" class="justified">
+    <div id="myDIV5header">Drag me</div>
+    <textarea>CLICKER</textarea><br>
+    <div>
+        SCORE: <input type="number" id="myNumber">
+        <button onclick="myFunctionGAME()">+<number id="UPNUMBER">1</number></button>
+        <button onclick="myFunctionGAME2()">UPGRADE (COST <number id="UPTHECOST"></number>)</button>
+        <button onclick="myFunctionGAME3()">RESET</button>
+    </div>
+</div>
+
+<script>
+    // Dragging functionality
+    dragElement(document.getElementById("myDIV5"));
+
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            // If present, the header is where you move the DIV from
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+            // Otherwise, move the DIV from anywhere inside the DIV
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // Get the mouse cursor position at startup
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // Call a function whenever the cursor moves
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // Calculate the new cursor position
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // Set the element's new position
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            // Stop moving when mouse button is released
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+
+    // Toggle display function
+    function myFunction4() {
+        var x = document.getElementById('myDIV5');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+
+    // Clicker game functions
+    var cookies = 0;
+    var COST = 0;
+    var UPNUMBER = 1;
+
+    function myFunctionGAME() {
+        cookies = cookies + UPNUMBER;
+        document.getElementById("myNumber").value = cookies;
+    }
+
+    function myFunctionGAME2() {
+        COST = COST + 1;
+        document.getElementById("UPTHECOST").innerHTML = COST + 1;
+        cookies = cookies - COST;
+        document.getElementById("myNumber").value = cookies;
+        UPNUMBER = UPNUMBER + 1;
+        document.getElementById("UPNUMBER").innerHTML = UPNUMBER;
+    }
+
+    function myFunctionGAME3() {
+        document.getElementById("myNumber").value = "";
+        document.getElementById("UPTHECOST").innerHTML = "1";
+        document.getElementById("UPNUMBER").innerHTML = "1";
+        cookies = 0;
+        COST = 0;
+        UPNUMBER = 1;
+    }
+</script>
+<!-- CHROME -->
+<style>div.justified id="myDIV57"{display: flex;justify-content: center;}</style>
+<div id="myDIV57" class="justified" style="position:absolute;top:43%;left:52%;outline:rgba(0,0,0,0.5) solid;background-color: rgba(200,200,200,0.5);width:36.5%;height:50%;display:none;"><script type="text/javascript">
+function setBrowserFrameSource(){var browserFrame = document.getElementById("browser");browserFrame.src= document.getElementById("txtUrl").value;}
+function webalert1() {var person = prompt("Cool Websites:\n\nnot ready yet!", "This is just here for fun!");if (person == null || person == "") {alert("OK");} else {alert("You entered: " + person);}}</script>
+<form target="_blank" method="get" action="http://www.google.com/search"><table><tbody>
+<input type="text" name="q" style="width:55%;font-size:10;" maxlength="255" value="" id="txtUrl" placeholder="Put in url and go or search google">
+<input style="width:8%;font-size:10;" type="button" value="Go" onclick="setBrowserFrameSource(); return false;"/>
+<input type="submit" value="Google Search" style="width:25%;font-size:10;">
+<input type="button" value="..." style="width:7%;font-size:10;" onclick="webalert1()"/><tr></tr></tbody></table></form>
+<iframe id="browser" name="browser" src="http://google.com" style="position:absolute;top:22px;left:3px;height:85%;width:97%"></iframe>
+</div><script>function myFunction44() {var x = document.getElementById('myDIV57');
+if (x.style.display === 'none') {x.style.display = 'block';}
+else {x.style.display = 'none';}}</script>
+<!-- CHAT -->
+<style>div.justified id="myDIV5"{display: flex;justify-content: center;}</style>
+<div id="myDIV33" class="justified" style="position:absolute;top:43%;left:90%;outline:rgba(0,0,0,0.5) solid;background-color: rgba(200,200,200,0.5);width:9.5%;height:50%;display:none;">
+<input id="input" placeholder="Username: Message" style="position:absolute;bottom:0px;left:0%;border-style: dotted none none none;background-color: rgba(200,200,200,0);width:100%;height:20px;z-index:1;"/>
+<div id=box style="position:absolute;top:0px;left:0px;background-color: rgba(200,200,200,0);width:100%;height:100%;"></div><script src="http://cdn.pubnub.com/pubnub.min.js"></script>
+<script>(function(){var pubnub = PUBNUB.init({publish_key:'demo',subscribe_key:'demo',ssl:true});
+var box = PUBNUB.$('box');var input = PUBNUB.$('input');var channel = 'CODEYOS';
+pubnub.subscribe({channel  : channel,
+callback : function(text) { box.innerHTML = (''+text).replace( /[<>]/g, '' ) + '<br>' + box.innerHTML }});
+PUBNUB.bind( 'keyup', input, function(e) {
+(e.keyCode || e.charCode) === 13 && pubnub.publish({
+channel : channel, message : input.value, x : (input.value='')})})})()</script></div><script>
+function myFunction37() {var x = document.getElementById('myDIV33');
+if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script>
+<!-- CALC -->
+<div id="OTHER123" style="position:absolute;top:15%;left:82%;outline:rgba(0,0,0,0.5) solid;background-color: rgba(200,200,200,0.5);width:17.5%;height:25%;display:none;">
+<style>#calc{width:5%;height:5%;}
+#btn{width:100%;height:15px;font-size:10px;}</style>
+<form name="calc"><table id="calc" border="0" align="center"><tbody><tr>
+<td colspan="5"><input id="btn" name="display" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" type="text" placeholder="calculator"></td><td style="display:none"><input name="M" type="number"></td></tr><tr>
+<td><input id="btn" type="button" value="MC" onclick="calc.M.value=''"></td><td><input id="btn" type="button" value="0" onclick="calc.display.value+='0'"></td><td><input id="btn" type="button" value="1" onclick="calc.display.value+='1'"></td><td><input id="btn" type="button" value="2" onclick="calc.display.value+='2'"></td><td><input id="btn" type="button" value="+" onclick="calc.display.value+='+'"></td></tr><tr><td><input id="btn" type="button" value="MS" onclick="calc.M.value=calc.display.value"></td><td><input id="btn" type="button" value="3" onclick="calc.display.value+='3'"></td><td><input id="btn" type="button" value="4" onclick="calc.display.value+='4'"></td><td><input id="btn" type="button" value="5" onclick="calc.display.value+='5'"></td><td><input id="btn" type="button" value="-" onclick="calc.display.value+='-'"></td></tr><tr><td><input id="btn" type="button" value="MR" onclick="calc.display.value=calc.M.value"></td><td><input id="btn" type="button" value="6" onclick="calc.display.value+='6'"></td><td><input id="btn" type="button" value="7" onclick="calc.display.value+='7'"></td><td><input id="btn" type="button" value="8" onclick="calc.display.value+='8'"></td><td><input id="btn" type="button" value="x" onclick="calc.display.value+='*'"></td></tr><tr><td><input id="btn" type="button" value="M+" onclick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td><td><input id="btn" type="button" value="9" onclick="calc.display.value+='9'"></td><td><input id="btn" type="button" value="+/-" onclick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))"></td><td><input id="btn" type="button" value="=" onclick="calc.display.value=eval(calc.display.value)"></td><td><input id="btn" type="button" value="/" onclick="calc.display.value+='/'"></td></tr><tr><td><input id="btn" type="button" value="1/x" onclick="calc.display.value=1/calc.display.value"></td><td><input id="btn" type="button" value="." onclick="calc.display.value+='.'"></td><td><input id="btn" type="button" value="x2" onclick="calc.display.value=Math.pow(calc.display.value,2)"></td><td><input id="btn" type="button" value="s.root" onclick="calc.display.value=Math.sqrt(calc.display.value)"></td><td><input id="btn" type="button" value="C" onclick="calc.display.value=''"></td>
+</tr></tbody></table></form></div>
+<script>function myFunction1397() {var x = document.getElementById('OTHER123');
+if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script>
+<!-- OTHER -->
+<div id="OTHER3D" style="position:absolute;top:68%;left:27.5%;outline:rgba(0,0,0,0.5) solid;background-color: rgba(200,200,200,0.5);width:23%;height:25%;display:none;">
+<button value="val1" id="valid1" onclick="jsfunc0()" style="background-color: rgba(200,200,200,0.5);">Reset</button>
+<button value="val1" id="valid1" onclick="jsfunc1()" style="background-color: rgba(200,200,200,0.5);">...</button>
+<button value="val2" id="valid1" onclick="jsfunc2()" style="background-color: rgba(200,200,200,0.5);">Curser Fun</button>
+<button value="val3" id="valid1" onclick="jsfunc3()" style="background-color: rgba(200,200,200,0.5);">...</button>
+<button value="val3" id="valid1" onclick="jsfunc4()" style="background-color: rgba(200,200,200,0.5);">...</button>
+<div id="W" style="display: none;">unavalible</div><div id="F" style="display: none;">
+<script type="text/javascript" src="http://m.free-codes.org/gh.php?id=2001"></script>
+<style type="text/css">.help { cursor: help }
+.pointer { cursor: pointer }
+.wait { cursor: wait }
+.crosshair { cursor: crosshair }
+.move { cursor: move }
+.not-allowed { cursor: not-allowed }</style>
+<p>(Hover over each heading to see the cursor effect).</p>
+<button class="help" onclick="CURSER1()">"Help"</button><button class="pointer" onclick="CURSER2()">"Pointer"</button><button class="wait" onclick="CURSER3()">"Wait"</button><button class="crosshair" onclick="CURSER4()">"Crosshair"</button><button class="move" onclick="CURSER5()">"Move"</button><button class="not-allowed" onclick="CURSER6()">"not-allowed"</button>
+<script>function CURSER1() {alert("What do you need help with?");}</script><script>function CURSER2() {alert("I'm a pointy pointer");}</script><script>function CURSER3() {alert("Wait... Loading...");}</script><script>function CURSER4() {alert("I'm a crosshair! Whatever that means.");}</script><script>function CURSER5() {alert("You can move this box!");</script><script>function CURSER6() {alert("HEY! YOU ARE NOT ALLOWED TO READ THIS!");}</script></div><div id="C" style="display: none;">unavalible</div><div id="C2" style="display: none;">unavalible</div>
+<script>var x = document.getElementById('W');
+var y = document.getElementById('F');var z = document.getElementById('C');var a = document.getElementById('C2');
+x.style.display = 'none';y.style.display = 'none';z.style.display = 'none';a.style.display = 'none';function jsfunc0(){var x = document.getElementById('W');
+var y = document.getElementById('F');var z = document.getElementById('C');var a = document.getElementById('C2');
+x.style.display = 'none';y.style.display = 'none';z.style.display = 'none';a.style.display = 'none';}function jsfunc1(){var x = document.getElementById('W');
+var y = document.getElementById('F');var z = document.getElementById('C');var a = document.getElementById('C2');
+x.style.display = 'block';y.style.display = 'none';z.style.display = 'none';a.style.display = 'none';}function jsfunc2(){var x = document.getElementById('W');
+var y = document.getElementById('F');var z = document.getElementById('C');var a = document.getElementById('C2');
+x.style.display = 'none';y.style.display = 'block';z.style.display = 'none';a.style.display = 'none';}function jsfunc3(){var x = document.getElementById('W');
+var y = document.getElementById('F');var z = document.getElementById('C');var a = document.getElementById('C2');
+x.style.display = 'none';y.style.display = 'none';z.style.display = 'block';a.style.display = 'none';}function jsfunc4(){var x = document.getElementById('W');
+var y = document.getElementById('F');var z = document.getElementById('C');var a = document.getElementById('C2');
+x.style.display = 'none';y.style.display = 'none';z.style.display = 'none';a.style.display = 'block';}
+</script><script>function myFunctiOTHER() {var x = document.getElementById('OTHER3D');
+if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script></div>
+<!-- TOOL -->
+<button onclick="TOOL()" style="position: absolute; bottom: 0.5vh; right: 6.5vh; width: 4.5vh; height: 4.5vh;"></button>
+<div id="myTOOL" style="position:absolute; right:1%; bottom:7%; width:15%; height:40%;background-color:white;display:table;text-align:center;display:none;z-index:3;"><u>SETTINGS</u><hr><select id="themes" onchange="changeTheme()">
+<option selected="" disabled="">Choose Walpaper</option><optgroup label="PHOTOS"><option value="http://s1.picswalls.com/wallpapers/2016/06/10/4k-desktop-wallpaper_065227602_309.jpg">nature:1</option><option value="https://images5.alphacoders.com/568/568653.jpg">nature:2</option><option value="https://newevolutiondesigns.com/images/freebies/nature-hd-background-22.jpg">nature:3</option><option value="https://newevolutiondesigns.com/images/freebies/nature-hd-background-15.jpg">nature:4</option><option value="http://thesmashable.com/wp-content/uploads/2013/05/free_wallpapers_free_nature_wallpapers_beautiful_nature_deskop_wallpapers_stunning_nature_desktop_background_wallpaper_free_nature_hd_wallpapers9.jpg">nature:5</option><option value="https://newevolutiondesigns.com/images/freebies/nature-hd-background-7.jpg">nature:6</option><option value="http://s1.picswalls.com/wallpapers/2016/03/29/beautiful-nature-hd_04232357_304.jpg">nature:7</option><option value="http://hdwallpaperbackgrounds.net/wp-content/uploads/2017/01/nature-wallpaper-hd-6.jpg">nature:8</option><option value="http://sdeerwallpaper.com/Cool-Wallpapers/4k-nature-background-Is-Cool-Wallpapers.jpg">nature:9</option><option value="https://4k-wallpaper.net/images/mountain-lake_485.jpeg">nature:10</option><option value="http://icloudpicture.com/wp-content/uploads/2016/02/abstract_4k_wallpaper_2016.jpg">Geometric:1</option><option value="http://www.facets.la/wallpaper/W_2013_004_FUZZ.jpg">Geometric:2</option><option value="http://www.facets.la/wallpaper/W_2013_326_DUSK_THINGS.jpg">Geometric:3</option><option value="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-268220.jpg">Geometric:4</option><option value="https://s-media-cache-ak0.pinimg.com/originals/e9/b3/1d/e9b31d2dcae90b7ab6f415223fa1eec3.jpg">Geometric:5</option><option value="http://orig02.deviantart.net/da95/f/2014/164/b/4/abstract_diamond_wallpaper_by_silentpotatogfx-d7m7cq1.png">Geometric:6</option><option value="http://wallpapercave.com/wp/wp1813440.jpg">Geometric:7</option><option value="http://www.facets.la/wallpaper/W_2014_340_DIVER_II.jpg">Geometric:8</option><option value="https://s-media-cache-ak0.pinimg.com/originals/74/8d/95/748d957e106a8c619e08aed044bcfb3c.jpg">Simple:1</option><option value="https://s-media-cache-ak0.pinimg.com/originals/45/51/b4/4551b44edf8a66f13b1d832464201413.jpg">Simple:2</option><option value="http://orig00.deviantart.net/45c9/f/2016/027/a/c/wallpaper_geometric_color_4k_uhd_by_airworldking-d9ok929.png">Simple:3</option><option value="http://orig09.deviantart.net/d307/f/2015/074/4/c/modern_material_by_jameshd2k-d8lw5ht.jpg">Simple:4</option><option value="http://wallpaperrs.com/uploads/creative-graphics/thumbs/blue-squares-wallpaper-2912.jpg">Simple:5</option><option value="http://4kwallpapershd.com/wp-content/uploads/2016/08/Retro-Patterns-Multicolor-Background-Photo.jpg">Simple:6</option><option value="http://www.lanlinglaurel.com/data/out/61/4446961-pattern-wallpaper.png">Simple:7</option><option value="http://ahdwallpaper.com/wp-content/uploads/2015/04/Squares-Pattern-Background.jpg">Simple:8</option><option value="https://s-media-cache-ak0.pinimg.com/736x/d5/63/55/d563553d875fb7941e8f6b737c6ea095.jpg">Simple:9</option><option value="https://4kwallpapers.co/wp-content/uploads/2015/08/green-vector-rectangles-4k-wallpapers-300x169.jpg">Simple:10</option><option value="http://goldwallpapers.com/uploads/posts/pattern-background/pattern_background_030.jpg">Glossy:1</option><option value="https://wallpaperscraft.com/image/squares_green_dark_background_surface_66950_3840x2160.jpg">Glossy:2</option><option value="https://wallpaperscraft.com/image/ball_cubes_metal_blue_red_reflection_97785_3840x2160.jpg">Glossy:3</option>\<option value="http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Space-Universe-Stars-Nebula-In-Red-Yellow-and-Blue-Color-WallpapersByte-com-3840x2400.jpg">Galaxy:1</option><option value="http://www.wallpapermade.com/images/wallpapers/originals/constellations-space-wallpaper-wallpaper-7171.jpg">Galaxy:2</option><option value="http://i.imgur.com/tY3OiJm.jpg">Galaxy:3</option><option value="https://www.walldevil.com/wallpapers/a74/wallpaper-space-definition-high-blue-earth-scene-gudang.jpg">Earth:1</option><option value="http://desktopwalls.net/wp-content/uploads/2015/09/Earth%20From%20Space%204K%20Ultra%20HD%20Desktop%20Wallpaper.jpg">Earth:2</option><option value="https://cdn.shutterstock.com/shutterstock/videos/8864476/thumb/1.jpg">Earth:3</option><option value="https://4kwallpapers.co/wp-content/uploads/2015/07/earth-view-from-space-4k-wallpapers.jpg">Earth:4</option></optgroup><optgroup label="ANIMATED"><option value="https://s-media-cache-ak0.pinimg.com/originals/ed/bf/83/edbf8364ff7f5995bac56f2bfe16d5c7.gif">Rain</option><option value="http://i.imgur.com/ctvpb0z.gif">Rain 2</option><option value="http://i.imgur.com/Sk8uISa.gif">Rain 3</option><option value="http://justfunfacts.com/wp-content/uploads/2017/01/snow.gif">Snow</option><option value="http://i.imgur.com/Yy2qNQe.gif">Snow 2</option><option value="http://i.imgur.com/KyQf8mC.gif">Snow 3</option><option value="http://i.imgur.com/MpFHonH.gif">Snow 4</option><option value="http://i.imgur.com/LGtR3ku.gif">Colors</option><option value="http://i.imgur.com/6NQTYHK.gif">Nature</option><option value="https://s-media-cache-ak0.pinimg.com/originals/37/68/db/3768dbfc0369640f22e9f686e15d94ce.gif">Nature 2</option><option value="https://s-media-cache-ak0.pinimg.com/originals/37/b3/ee/37b3ee245b6755ef9ca2df9a155613d0.jpg">Nature 3</option><option value="http://d5vf6134d8ffdnfp1qv4rv3l.wpengine.netdna-cdn.com/wp-content/uploads/05-igazu-falls-cinemagraph.gif">Nature 4</option><option value="http://i.imgur.com/HufwA6q.gif">Nature 5</option><option value="http://i.imgur.com/d0EfsaT.gif">Nature 6</option><option value="http://i.imgur.com/Hd1kXIa.gif">Nature 7</option><option value="http://i.imgur.com/igI4mPG.gif">Nature 8</option><option value="http://i.imgur.com/rGsfLlR.gif">Nature 9</option><option value="http://udell.weebly.com/uploads/1/6/8/6/16860542/matt-dillon-cinemagraph_orig.gif">Fire</option><option value="http://i.imgur.com/P4bUtOj.gif">Fire 2</option><option value="http://www.netanimations.net/Fireworks-over-water-jumping-fish-animation.gif">Fireworks</option><option value="https://playiku.files.wordpress.com/2016/01/arcade_gif.gif">Arcade</option><option value="http://i.imgur.com/AFWa9a4.gif">Tornado</option><option value="http://i.imgur.com/MlfDS2G.gif">City</option><option value="http://i.imgur.com/ENhKvZD.gif">City 2</option><option value="http://i.imgur.com/jqwoo6S.gif">City 3</option><option value="http://i.imgur.com/gmuhE5e.gif">Beach</option><option value="http://i.imgur.com/eWGNnIy.gif">Fall</option></optgroup></select><script type="text/javascript">
+function changeTheme(){var e = document.getElementById("themes");
+var theme = e.options[e.selectedIndex].value;console.log(theme);
+document.getElementById("shelf").style.backgroundImage = "url("+theme+")";}  </script>
+<input type="file" name="pic" accept=".png, .jpg, .jpeg" id="pic" onchange="readURL(event)" style="display: inline-block;"><br>
+<script>function readURL(event){var file = document.getElementById("pic").files[0];
+var reader = new FileReader();reader.onloadend = function(){
+document.getElementById('shelf').style.backgroundImage = "url(" + reader.result + ")";}if(file){reader.readAsDataURL(file);}else{}}  
+</script><hr><script src="https://togetherjs.com/togetherjs-min.js"></script><button onclick="TogetherJS(this); return false;" style="border-width:2px;border-style: outset;border-color: buttonface;border-image: initial;background-color:buttonface;">Collaborate With Friends</button><hr><button onclick="TXT2()" style="background-color:#4CAF50;padding:5px;text-align:center;width:100%;display: table-cell;position:absolute;bottom:0px;">ABOUT THE OS</button></div>
+<script>function TOOL() {var x = document.getElementById('myTOOL');
+if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script>
+<!-- START -->
+<div id="START" style="position:absolute; left:25%; top:12.5%; width:50%;height:75%;background-color:white;z-index:2;resize:both; overflow:auto;display:none;"><center style="font-size:50px;">CODEY OS</center><input type="image" id="HOME" onclick="myStart()" src="https://cdn1.iconfinder.com/data/icons/nuove/128x128/actions/fileclose.png" alt=" " style="position:absolute;right:0px;top:0px; width:5%; height:7%;z-index:3;"><input type="image" id="CHROME" onclick="myFunction44()" src="http://www.shakeuplearning.com/wp-content/uploads/2015/08/chrome-big.png" alt=" " style="position: absolute; bottom: 50%; left: 18%; width: 5%; height: 7%;"><input type="image" id="TEXT" onclick="myFunction13()" src="http://icons.iconarchive.com/icons/martz90/circle-addon2/512/notepad-icon.png" alt=" " style="position: absolute; bottom: 50%; left: 38%; width: 5%; height: 7%;"><input type="image" id="ART" onclick="myFunctionART()" src="https://lh3.googleusercontent.com/sFUmSLtyuwKYT2-XVhzs9C4deTpLI0nee1us6x3s0vsZ0EKwxM8Tsclc4vOEWUjFM5A=w300" alt=" " style="position: absolute; bottom: 50%; left: 58%; width: 5%; height: 7%;"><input type="image" id="MUSIC" onclick="myFunction3()" src="https://redalemeden.com/images/itunes/12-2-0.png" alt=" " style="position: absolute; bottom: 50%; left: 78%; width: 5%; height: 7%;"><input type="image" id="GAME" onclick="myFunction4()" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/gamecontroller-512.png" alt=" " style="position: absolute; bottom: 40%; left: 18%; width: 5%; height: 7%;"><input type="image" id="CHAT" onclick="myFunction37()" src="https://cdn4.iconfinder.com/data/icons/keynote-and-powerpoint-icons/256/Messages-512.png" alt=" " style="position: absolute; bottom: 40%; left: 38%; width: 5%; height: 7%;"><input type="image" id="CALC" onclick="myFunction1397()" src="http://icons.veryicon.com/ico/Application/Long%20Shadow%20Media/Calculator.ico" alt=" " style="position: absolute; bottom: 40%; left: 58%; width: 5%; height: 7%;"><input type="image" id="OTHER" onclick="myFunctiOTHER()" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/ultra-glossy-silver-buttons-icons-business/087834-ultra-glossy-silver-button-icon-business-magic-wand.png" alt=" " style="position: absolute; bottom: 39%; left: 77%; width: 7%; height: 9.5%;"><button onclick="TXT1()" style="background-color:#FF0000;padding:5px;text-align:center;width:100%;display: table-cell;position:absolute;bottom:50px;">WELCOME</button><script>function TXT1() {alert("WELCOME");}</script><button onclick="TXT2()" style="background-color:#00FF00;padding:5px;text-align:center;width:100%;display: table-cell;position:absolute;bottom:25px;">ABOUT THE OS</button><script>function TXT2() {alert("work in progress\n\nInfo: \nThis website was created by 13 year old, John Codey Barr, and it was made to do all your daily stuff on a website in the form of an Operating System or OS for short. You can contact me with new ideas, bugs, and other stuff at 21jbarr@shapleighschool.org if you are in my school, and if you aren't then contact me at my Farwalker3@icloud.com!\n\nWorks Cited:\nwww.wikipedia.org\nwww.onlinesheetmusic.com/\nwww.w3schools.com\nwww.successfulsinging.com\nwww.musicroom.com\nwww.avid.com\nwww.newgrounds.com\nwww.videezy.com\nwww.npr.org");}</script><button onclick="TXT3()" style="background-color:#0000FF;padding:5px;text-align:center;width:100%;display:table-cell;position:absolute;bottom:0px;">OTHER</button>
+<script>function TXT3(){alert("OTHER");}</script></div><script>function myStart() {var x = document.getElementById('START');
+if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}}</script></body></html>
